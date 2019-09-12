@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="plug/swiper.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>梵音健身</title>
+</head>
+
+<body class="fanyinBody">
+    <header>
+        <div class="wrap head">
+            <div class="logo"></div>
+            <div class="nav">
+                <div class="navItem act">公司首页
+                    <div class="headLine"></div>
+                </div>
+                <div class="navItem">关于我们
+                    <div class="headLine"></div>
+                </div>
+                <div class="navItem">合作伙伴
+                    <div class="headLine"></div>
+                </div>
+                <div class="navItem">新闻动态
+                    <div class="headLine"></div>
+                </div>
+                <div class="navItem">健身课程
+                    <div class="headLine"></div>
+                </div>
+                <div class="navItem">专业器材
+                    <div class="headLine"></div>
+                </div>
+                <div class="navItem">私教团队
+                    <div class="headLine"></div>
+                </div>
+                <div class="navItem">联系我们
+                    <div class="headLine"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/banner1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/banner2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/banner3.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <main>
+        <div class="aboutUs">
+            <div class="wrap">
+                <div class="mainTitle">
+                    <h1>ABOUT US</h1>
+                    <p>公司简介</p>
+                </div>
+                <div class="aboutUsCon">
+                    <img class="aboutUsImg" src="img/1.jpg" alt="">
+                    <div class="msg">
+                        <h3>梵音健身</h3>
+                        <p>黑龙江梵音健身服务有限公司办公室地址位于被誉为欧亚大陆桥的明
+                            珠--哈尔滨，哈尔滨 哈尔滨市利民开发区学院路志华商城14栋23号。，于
+                            2014年06月03日在哈尔滨市呼兰区市场监督管理局注册成立，注册资本为
+                            4万元，在公司发展壮大的4年里，我们始终为客户提供好的产品和技术支
+                            持、健全的售后服务，我公司主要经营室内休闲健身服务，舞台艺术创作
+                            服务。</p>
+                        <div class="aboutUsBtn moreBtn">查看更多</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course">
+            <div class="wrap">
+                <div class="mainTitle">
+                    <h1>FITNESS COURSE</h1>
+                    <p>健身课程</p>
+                </div>
+                <div class="courseList">
+                    <div class="courseItem">
+                        <p class="msg">身体塑性训练</p>
+                        <div class="mask">
+                            <p>身体塑性训练</p>
+                            <div class="moreBtn1">查看更多</div>
+                        </div>
+                    </div>
+                    <div class="courseItem">
+                        <p class="msg">身体塑性训练</p>
+                        <div class="mask">
+                            <p>身体塑性训练</p>
+                            <div class="moreBtn1">查看更多</div>
+                        </div>
+                    </div>
+                    <div class="courseItem">
+                        <p class="msg">身体塑性训练</p>
+                        <div class="mask">
+                            <p>身体塑性训练</p>
+                            <div class="moreBtn1">查看更多</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="moreBtn2">点击查看更多</div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="wrap">
+                <div class="mainTitle">
+                    <h1>VIEW VIDEO</h1>
+                    <p>视频教程</p>
+                </div>
+                <div class="videoList">
+                    <div class="videoItem">
+                        <div class="box">
+                            <div class="videoItemTit">伏地挺身——300卡路里</div>
+                            <div class="moreBtn1">点击订购</div>
+                        </div>
+                    </div>
+                    <div class="videoItem">
+                        <div class="box">
+                            <div class="videoItemTit">伏地挺身——300卡路里</div>
+                            <div class="moreBtn1">点击订购</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="moreBtn2">点击查看更多</div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="plug/swiper.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+
+
+        $('.navItem').click(function () {
+            $('.navItem').removeClass('act');
+            $(this).addClass('act');
+        })
+
+    </script>
+</body>
+
+</html>

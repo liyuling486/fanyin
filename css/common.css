@@ -1,0 +1,138 @@
+.fanyinBody {
+    background: #000;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 80px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 250px;
+    height: 80px;
+    background: #fff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.navItem {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 28px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navItem.act {
+    color: #41e1de;
+}
+
+.navItem.act .headLine {
+    display: block;
+}
+
+.headLine {
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background: #41e1de;
+    position: absolute;
+    bottom: 0;
+    display: none
+}
+
+/* swiper start */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    border: 2px solid #06cac6;
+    opacity: 1;
+    background: transparent;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background: #06cac6;
+}
+
+/* swiper end */
+
+.moreBtn {
+    width: 150px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.moreBtn1 {
+    width: 150px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    border-radius: 22px;
+    text-align: center;
+    cursor: pointer;
+    background: #06cac6;
+}
+.moreBtn2{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    border-radius: 22px;
+    text-align: center;
+    cursor: pointer;
+    background: #06cac6;
+
+}

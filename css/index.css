@@ -1,0 +1,187 @@
+.banner {
+    height: 600px;
+}
+
+.mainTitle {
+    overflow: hidden;
+}
+
+.mainTitle h1 {
+    color: #41e1de;
+    font-size: 48px;
+    text-align: center;
+}
+
+.mainTitle p {
+    color: #41e1de;
+    font-size: 24px;
+    text-align: center;
+}
+
+.aboutUsCon {
+    height: 400px;
+    background: #41e1de;
+    color: #fff;
+    position: relative;
+    margin-top: 40px;
+}
+
+.aboutUsCon .msg {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px;
+    padding-left: 80px;
+    margin-left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.aboutUsCon .msg h3 {
+    width: 100%;
+    font-size: 24px;
+}
+
+.aboutUsCon .msg p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 32px;
+    text-indent: 2em;
+}
+
+.aboutUsImg {
+    width: 600px;
+    position: absolute;
+    top: -20px;
+    left: 40px;
+}
+
+/* 健身课程 */
+.course {
+    height: 650px;
+    position: relative;
+}
+
+.course::before {
+    content: "";
+    background: url(../img/2.jpg) no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 40px;
+}
+
+.courseList, .videoList{
+    height: 360px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.courseItem{
+    width: 300px;
+    position: relative;
+}
+
+.courseItem>p{
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #41e1de;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 10px 0;
+}
+.courseItem:nth-child(1){
+    background: url(../img/2.jpg) no-repeat;
+    background-position: center;
+    background-size: 600px;
+}
+
+.courseItem:nth-child(2){
+    background: url(../img/banner2.jpg) no-repeat;
+    background-position: center;
+    background-size: 600px;
+}
+
+.courseItem:nth-child(3){
+    background: url(../img/1.jpg) no-repeat;
+    background-position: center;
+    background-size: 600px;
+}
+.courseItem:hover .mask{
+    display: block;
+}
+.courseItem:hover>p{
+    display: none;
+}
+.courseItem>.mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    padding: 80px 0;
+    box-sizing: border-box;
+    display: none;
+}
+.courseItem>.mask .moreBtn1{
+    margin: 55px auto 0;
+}
+.courseItem>.mask p{
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    color: #41e1de;
+    letter-spacing: 2px;
+    margin-top: 60px;
+}
+
+/* 视频教程 */
+.videoItem{
+    width: 580px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.videoItem:nth-child(1){
+    background: url(../img/2.jpg) no-repeat;
+    background-position: center;
+    background-size: 600px;
+}
+
+.videoItem:nth-child(2){
+    background: url(../img/banner2.jpg) no-repeat;
+    background-position: center;
+    background-size: 600px;
+}
+.videoItem>.box{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #41e1de;
+    padding: 24px;
+    box-sizing: border-box;
+    position: relative;
+}
+.videoItemTit{
+    width: 340px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    background: rgba(37, 212, 209, .1);
+    border-radius: 22px;
+    margin: 0 auto;
+}
+.videoItem .moreBtn1{
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
